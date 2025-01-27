@@ -10,6 +10,11 @@ public class Main {
         //  3. Provide random input to test suite and ensure your implementations
         //     of InsertionSort and Selection sort continue to work.
         //  4. Increase the loop count for TestSuite to get better performance results.
+        /*public static int[] createArray(){
+            int[] newArr = new int[(int)(math.Random *10)+1];
+
+            return newArr;
+        }*/
 
         int[] testInput = { 1, 2, 3, 1 };
 
