@@ -3,15 +3,15 @@ public class InsertionSort implements Sorter {
 
     public void sort(int[] input) {
         System.out.println("Insertion Sort!!!");
-        int[] output = input;
-        for (int i=0; i<input.length;i++){
-            for (int j=i; j>0;j--){
-                if (input[j]<input[j-1]){
-                    output[j-1] = input[j];
-                }
+        for (int i=1; i<input.length;i++){
+            int point = input[i];
+            int j = i-1;
+            while (input[j]>point && j>=0){
+                    input[j+1] = input[j];
+                    j--;
             }
+            input[j+1]=point;
         }
-        input = output;
-        System.out.println(Arrays.toString(output));
+        System.out.println(Arrays.toString(input));
     }
 }
